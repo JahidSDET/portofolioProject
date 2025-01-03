@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contract Page</title>
+    <style>
+        form {
+            margin: 20px 0;
+            max-width: 400px; /* Limit form width */
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+        input, select, button, textarea {
+            width: 100%; /* Full width inside form's max-width */
+            max-width: 300px; /* Limit the width of input fields */
+            padding: 6px; /* Smaller padding for compact size */
+            margin-bottom: 10px;
+            font-size: 14px; /* Slightly smaller font size */
+            box-sizing: border-box;
+        }
+        button {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contract Page</h1>
+    <p>Here is an online image:</p>
+    <img src="https://images.pexels.com/photos/1133957/pexels-photo-1133957.jpeg" alt="Online Image" width="500" height="500">
+
+    <form action="#" method="post" enctype="multipart/form-data">
+        <!-- Text Field -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <!-- Password Field -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+        <!-- Email Field -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <!-- Telephone Field -->
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+        <!-- Number Field -->
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="100" placeholder="Enter quantity" required>
+
+        <!-- Range Field -->
+        <label for="range">Select Range:</label>
+        <input type="range" id="range" name="range" min="0" max="100">
+
+        <!-- Color Picker -->
+        <label for="color">Pick a Color:</label>
+        <input type="color" id="color" name="color">
+
+        <!-- Search Field -->
+        <label for="search">Search:</label>
+        <input type="search" id="search" name="search" placeholder="Search here">
+
+        <!-- Checkbox -->
+        <label>
+            <input type="checkbox" id="terms" name="terms" required>
+            I agree to the terms and conditions
+        </label>
+
+        <!-- Date Field -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <!-- File Upload Field -->
+        <label for="file">Upload your document:</label>
+        <input type="file" id="file" name="file" accept=".pdf,.doc,.docx,.jpg,.png" required>
+
+        <!-- Dropdown for Gender -->
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="">Select your gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <!-- Textarea -->
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Enter your message"></textarea>
+
+        <!-- Upload Button -->
+        <button type="button">Upload</button>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
