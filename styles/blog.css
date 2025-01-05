@@ -1,0 +1,49 @@
+header {
+    background-image: url('../images/cover.png'); /* Path to the background image */
+    background-size: cover; /* Ensures the image covers the header area */
+    background-position: center center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repetition of the image */
+    width: 100%; /* Full width of the header */
+    height: auto; /* Adjust height based on padding */
+    padding: 20px; /* Adds padding across all sides of the header */
+    border: 30px solid red;
+    display: flex; /* Enables flexbox for content alignment */
+    flex-direction: column; /* Stacks content vertically */
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    color: white; /* Makes text visible on the background */
+    text-align: center; /* Centers text */
+    box-sizing: border-box; /* Ensures padding doesn't affect the width/height */
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+div {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: aqua
+}
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+li {
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: 900;
+}
